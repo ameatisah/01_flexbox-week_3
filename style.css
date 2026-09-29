@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after{box-sizing: border-box;}
+
+:root{
+    --ink: #1b1d23;
+    --muted: #5b6070;
+    --brand: #b3541e;
+    --suface: #ffffff;
+    --page: #faf9f7;
+    --line: #e3e1dc;
+}
+
+
+body{
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+img{max-width: 100%; height: auto; display: block;}
+
+a{color: var(--brand);}
+
+a:focus-visible{
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+}
+
+/* --- card row --------------------------------------------------
+   flex: 1 1 280px on each card is the whole trick. Never narrower
+   than about 280px, otherwise share the row equally. Three cards
+   become two, then one, as the window narrows.
+   ------------------------------------------------------------- */
+
+.site-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
+    background: var(--suface);
+    border-bottom: 1px solid var(--ink);
+}
+
+
+.logo{
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--ink);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-list a:hover{ text-decoration: underline;}
+
+/* --- page shell ----------------------------------------------- */
+
+.wrap{
+    width: 100%;
+    max-height: 1100px;
+    margin-inline: auto;
+    padding: 2rem 1.5rem;
+}
+
+.lede{color: var(--muted); max-width: 55ch;}
+
+
+/* --- card row --------------------------------------------------
+   flex: 1 1 280px on each card is the whole trick. Never narrower
+   than about 280px, otherwise share the row equally. Three cards
+   become two, then one, as the window narrows.
+   ------------------------------------------------------------- */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 2rem 0 0;
+}
+
+.card{
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    background: var(--suface);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    flex: 1;
+}
+
+
+.card h2{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.card p{
+    margin: 0;
+    color: var(--muted);
+}
+
+.card-link{
+    margin-top: auto;
+    font-weight: 600;
+}

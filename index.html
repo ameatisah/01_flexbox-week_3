@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width", initial-scale1.0/>
+        <link rel="stylesheet" href="style.css">
+        <title>flexbox lab: nav bar and project cards</title>
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="logo" href="#">Ameat .dev</a>
+
+            <nav aria-label="main">
+                <ul class="nav-list">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="wrap">
+            <h1 id="Work">project</h1>
+            <p class="lede"> three card in a row. they wrap on their own, with media query.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="https://placehold.co/600x400/1b1d23/ffffff?text=bus+Ameat" alt="screenshot of the bus tracker route list" width="600" height="400">
+                    <div class="card-body">
+                        <h2>kano bus tracker</h2>
+                        <p>Route and departure list for the main motor parks, built as a static page.</p>
+                        <a class="card-link" href="#">Read more</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/600x400/b3541e/ffffff?text=recipes" alt="screenshot of the recipt book index" width="600" height="400"/>
+                    <div class="card-body">
+                        <h2>family recipt book</h2>
+                        <p>twelve recipt, one page each, with odered steps and ingredient list.</p>
+                        <a class="card-link" href="#">Read more</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://placehold.co/600x400/17a398/ffffff?text=shop+page" alt="screenshot of a shop landing page" width="600" height="400"/>
+                    <div class="card-body">
+                        <h2>Tailor shop page</h2>
+                        <p>A single page for a Tailor in sabon gari. princes, house, and a contact form.</p>
+                        <a class="card-link" href="#">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>
